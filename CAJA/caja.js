@@ -1,4 +1,4 @@
-const pedidos = [];
+const pedidos=[];
 
 function agregarPedido(producto){
 pedidos.push({nombre: producto.nombre,precio: producto.precio});
@@ -25,7 +25,6 @@ return true;
 function listarPedidos(){
 console.log("\nPEDIDOS");
 let total = 0;
-
     if(pedidos.length==0){
     console.log("no hay pedidos");
     }else{
@@ -40,3 +39,11 @@ let total = 0;
 }
 
 export {pedidos,agregarPedido,modificarPedido,eliminarPedido,listarPedidos};
+
+ //Segunda parte del coffe code 
+ //como calcular el iva? "Prueba"
+let poriginal = 100;
+let piva = 0.16;
+
+let iva = poriginal*piva;
+console.log("iva"+iva);
