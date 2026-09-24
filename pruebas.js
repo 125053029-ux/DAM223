@@ -16,8 +16,7 @@ agregarPedido('Pure de papa',50);
 console.log("PEDIDOS:");
 console.log(pedidos);
 console.log("TOTAL ACUMULADO:");
-console.log(pacumulados);
-*/
+console.log(pacumulados);*/
 
 //codigo nuevoo
 const pedidos=[];
