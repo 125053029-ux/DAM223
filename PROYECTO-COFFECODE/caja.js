@@ -21,16 +21,16 @@ if(pedidos.length==0){
         console.log("no hay pedidos");
     }else{
         for(let i=0;i<pedidos.length;i++){
-            const {nombre,precio}=pedidos[i];
-            console.log(`${i+1}. ${nombre}-$${precio}`);
-        } }
+            const {nombre,precio}=pedidos[i]; // sacando nombre y precio del pedido act
+            console.log(`${i+1}. ${nombre}-$${precio}`); //lo muestra 
+        }}
 
-   let subtotal=pedidos.reduce(function(acumulado,{precio}){
+   let subtotal=pedidos.reduce(function(acumulado,{precio}){ //solo usamos lo del reduce para sumar los precioss
     return acumulado+precio;
-},0);
+},0); //empieza el acm en 0
 
 let descuento=0;
-const sopa=pedidos.find(function(producto){
+const sopa=pedidos.find(function(producto){ //empezamos con buscador
     return producto.nombre.toLowerCase()=="sopa";
 });
 const chilaquiles=pedidos.find(function(producto){
@@ -102,4 +102,19 @@ console.log(total);
 }
 
 export{pedidos,agregarPedido,modificarPedido,eliminarPedido,listarPedidos};
+
+// coffe code 3 - prueba callback - notificaciones
+function notificacionesListas(producto){
+    console.log("ha sido exitoso el pedido:"+ producto);
+}
+
+function notificacionesError(producto){
+    console.log("ha sido canselado el pedido:" +producto);
+
+}
+
+function esperando(callback,producto){
+    console.log("esperando");
+    callback(producto);
+}
 
