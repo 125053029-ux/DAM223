@@ -32,11 +32,11 @@ function listarPedidos(){
         }
     }
 
-    let subtotal=pedidos.reduce(function(acumulado,{precio}){
+    let subtotal=pedidos.reduce(function(acumulado,{precio}){ //reduce suma todos los precios - 
         return acumulado+precio;
     },0);
     let descuento=0;
-    const sopa=pedidos.find(function(producto){
+    const sopa=pedidos.find(function(producto){ //busca el primer elemento que cumpla solo uno
         return producto.nombre.toLowerCase()=="sopa";
     });
     const chilaquiles=pedidos.find(function(producto){
