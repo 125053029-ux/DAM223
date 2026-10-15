@@ -2,10 +2,10 @@ import {Text, Image, View, Button} from 'react-native';
 
 export const Saludo2= ()=>{
     return(
-        <view>
+        <View>
         <Text>Hola dulcesita : desde un componente propio</Text>
-         <Image source={require('./assets/wave.png')}></Image>
-        <button title="Presiona para saludar"></button>
-        </view>
+         <Image source={require('../assets/wave.png')}></Image>
+        <Button title="Presiona para saludar"/>
+        </View>
     )
 }

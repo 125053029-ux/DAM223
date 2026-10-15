@@ -3,15 +3,17 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,Image } from 'react-native';
 import { Saludo } from './components/Saludo';
 import { Saludo2 } from './components/Saludo2';
+import { Perfil } from './components/Perfil';
 
 /* 2.ZONA DEL MAIN(COMPONENTES, SCREENS) / EJECUCION*/
 export default function App() {
   return (
     <View style={styles.container}>
       <Text>Hola dulcesita REACT NATIVE</Text>
-      <Image source={require('../assets/wave.png')}></Image>
+      <Image source={require('./assets/wave.png')}></Image>
       <Saludo></Saludo>
       <Saludo2></Saludo2>
+      <Perfil/>
       
       
       <StatusBar style="auto" />
