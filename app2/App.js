@@ -13,7 +13,14 @@ export default function App() {
       <Image source={require('./assets/wave.png')}></Image>
       <Saludo></Saludo>
       <Saludo2></Saludo2>
-      <Perfil/>
+      <Perfil nombre="Dulce ayelen perez toribio" 
+      carrera="TIID" 
+      materia="Movil"
+      cuatri="Cuarto cuatrimestre">
+      </Perfil>
+       
+
+      
       
       
       <StatusBar style="auto" />
