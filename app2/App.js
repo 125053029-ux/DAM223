@@ -9,19 +9,29 @@ import { Perfil } from './components/Perfil';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hola dulcesita REACT NATIVE</Text>
-      <Image source={require('./assets/wave.png')}></Image>
-      <Saludo></Saludo>
-      <Saludo2></Saludo2>
-      <Perfil nombre="Dulce ayelen perez toribio" 
+  
+      <Perfil nombre="Dulcesita" 
       carrera="TIID" 
       materia="Movil"
-      cuatri="Cuarto cuatrimestre">
+      cuatri="Cuarto cuatrimestre"
+      style={styles.tarjeta1}>
       </Perfil>
        
-
+       <Perfil nombre="Cocardo" 
+      carrera="TIID" 
+      materia="i love you"
+      cuatri="1-marzo"
+      style={styles.tarjeta2}>
+      </Perfil>
+       
+       <Perfil nombre="KARLOTA" 
+      carrera="TIID" 
+      materia="Movil"
+      cuatri="Cuarto cuatrimestre"
+      style={styles.tarjeta3}>
       
-      
+      </Perfil>
+       
       
       <StatusBar style="auto" />
     </View>
@@ -29,10 +39,13 @@ export default function App() {
 }
 /* 3.ZONA DE LA ESTETICA */
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+ container: {
+  flex: 1,
+  backgroundColor: '#fff',
+  flexDirection: 'row',
+  justifyContent: 'space-evenly',
+},
+  tarjeta1:{backgroundColor:'pink'},
+  tarjeta2:{backgroundColor:'violet'},
+  tarjeta3:{backgroundColor:'azure'},
 });
