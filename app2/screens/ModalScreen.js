@@ -1,7 +1,7 @@
 /* 1.ZONA DE IMPORTACIONES */
 import { StyleSheet, View , Text} from 'react-native';
 /* 2.ZONA DEL MAIN(COMPONENTES, SCREENS) / EJECUCION*/
-export default function Modal() {
+export default function ModalScreen() {
   return (
     <View style={styles.container}>
  

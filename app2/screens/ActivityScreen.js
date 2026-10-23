@@ -1,7 +1,7 @@
 /* 1.ZONA DE IMPORTACIONES */
 import { StyleSheet, View , Text} from 'react-native';
 /* 2.ZONA DEL MAIN(COMPONENTES, SCREENS) / EJECUCION*/
-export default function ActivityIndicator() {
+export default function ActivityScreen() {
   return (
     <View style={styles.container}>
  
