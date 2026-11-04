@@ -55,7 +55,7 @@ let textoDeportes= 'No';
 
       <TextInput
         style={styles.input}
-        placeholder="Nombre completo"
+        placeholder="Nombre"
         value={nombre}
         onChangeText={setNombre}/>
       <TextInput
